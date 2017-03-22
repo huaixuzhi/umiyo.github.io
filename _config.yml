@@ -1,0 +1,4 @@
+baseurl: /
+
+# 启用kramdown，生成文章的目录树
+markdown: kramdown
