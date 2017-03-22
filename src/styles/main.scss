@@ -152,20 +152,14 @@ header {
             display: block;
         }
         @media only screen and (min-width:$cut){
-            .site-nav {
-                .logo {
-                    font-size: 22px;
-                }
-                nav {
-                    display: block;
-                }
-                .quick-menu {
-                    display: none;
-                }
+            .logo {
+                font-size: 22px;
             }
-            .wrap {
-                width: 1024px!important;
-                margin: 0 auto;
+            nav {
+                display: block;
+            }
+            .quick-menu {
+                display: none;
             }
         }
     }
@@ -182,6 +176,10 @@ header {
     .wrap {
         width: 90%;
         margin: 0 auto;
+        @media only screen and (min-width:$cut){
+            width: 1024px!important;
+            margin: 0 auto;
+        }
     }
     a {
         color: #FFF;
