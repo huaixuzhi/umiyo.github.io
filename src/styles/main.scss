@@ -131,6 +131,11 @@ header {
             text-align: center;
             font-size: 22px;
             margin-right: 40px;
+            a {
+                &:hover {
+                    color: #fff;
+                }
+            }
         }
         nav {
             float: left;
@@ -196,7 +201,7 @@ header {
         margin: 0;
         color: #FFF;
         &:hover{
-            color: $sec;
+            color: #fff;
         }
         &:active {
             color: $sec;
