@@ -129,7 +129,7 @@ header {
             float: left;
             height: 55px;
             text-align: center;
-            font-size: 22px;
+            font-size: 15px;
             margin-right: 40px;
             a {
                 &:hover {
@@ -150,6 +150,20 @@ header {
         .quick-menu {
             float: right;
             height: 55px;
+            display: none;
+        }
+        @media only screen and (min-width:$cut){
+            .site-nav {
+                .logo {
+                    font-size: 22px;
+                }
+                nav {
+                    display: none;
+                }
+                .quick-menu {
+                    display: block;
+                }
+            }
         }
     }
     .clearfix {
