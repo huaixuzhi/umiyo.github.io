@@ -1,7 +1,9 @@
 # 站点设置
 title: 守心向暖 - 以最烟火的平淡守心向暖
 description: 恒心是成功最好的帮手，不要妄自菲薄，也不要觉得每天一点点的进步微不足道。
-permalink: /:year/:month/:day/:title/
+highlighter: rouge
+permalink: pretty
+paginate: 10
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
@@ -15,6 +17,7 @@ email: znyaiw@163.com
 github_username: umiyo
 
 # Markdown设置
+markdown: kramdown
 kramdown:
   input:  GFM
   use_coderay: true
