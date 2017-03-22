@@ -125,7 +125,6 @@ header {
         line-height: 55px;
         margin: 0 auto;
         .logo {
-            width: 125px;
             float: left;
             height: 55px;
             text-align: center;
@@ -164,6 +163,10 @@ header {
                     display: none;
                 }
             }
+            .wrap {
+                width: 1024px!important;
+                margin: 0 auto;
+            }
         }
     }
     .clearfix {
@@ -177,7 +180,7 @@ header {
         }
     }
     .wrap {
-        width: 1024px!important;
+        width: 90%;
         margin: 0 auto;
     }
     a {
