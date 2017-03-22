@@ -1,43 +1,37 @@
-#version
-version: "1.0"
+permalink: /blog/:year/:month/:title.html 
+include: ['.htaccess']
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
+markdown: kramdown
+highlights: pygments
+url: 
+cdn_url: 7u2t01.com1.z0.glb.clouddn.com
+lsi: false
+safe: true
+timezone: Asia/Shanghai
+auto: false 
 
-permalink: /:year/:month/:day/:title/
+paginate: 8
+paginate_path: "page:num"
 
-# 站点设置
-title: "Guovz"
-email: pzhuwjl@qq.com
-description: "王继林的个人博客"
-keywords: "Guovz"
-
-# 用户信息设置
-weibo_username: Guovz
-github_username: guovz
-
-# Markdown设置
 kramdown:
-  input:  GFM
-  use_coderay: true
-  coderay:
-    coderay_line_numbers:  nil
+  auto_ids: true,
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
 
+JB :
+  IMAGE_PATH : http://coolshell.info/images
 
+# presonal config
+domain: http://coolshell.info
+title: Lippi-浮生志
+description: Draw my life with code
+author: Lippi.OuYang
+email: ouyanglip@gmail.com
+github: LippiOuYang
 
-# 地址设置
-baseurl: "/jekyll-pithy"
-url: "http://127.0.0.1:4000"
-
-
-# 分页设置
-paginate: 10
-paginate_path: "page/:num"
-
-#scss设置
-sass:
-    sass_dir: /assets/stylesheet
-    style: :compressed
-
-# duoshuo设置
-# duoshuo_shortname: 
-
-# 百度统计设置
-# baidu_analysis:
+config:
+  js_dir:
+  img_dir:
+  css_dir:
