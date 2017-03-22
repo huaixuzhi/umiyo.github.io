@@ -1,20 +1,26 @@
-# Site settings
+# 站点设置
 title: 守心向暖 - 以最烟火的平淡守心向暖
-description: A blog about lorem ipsum dolor sit amet
+description: 恒心是成功最好的帮手，不要妄自菲薄，也不要觉得每天一点点的进步微不足道。
+permalink: /:year/:month/:day/:title/
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: Anon Developer
-user_description: Bicycle rights irony actually neutra typewriter lyft. Man bun taxidermy put a bird on it, umami yr ramps pop-up ugh bushwick chia lo-fi. Occupy bitters pour-over snackwave you probably haven't heard of them small batch. Cornhole mustache man bun letterpress echo park VHS.
-user_title: Software Developer
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
+username: umiyo
+user_description: 竹杖芒鞋轻胜马，一蓑烟雨任平生。
+user_title: Web前端开发工程师
+email: znyaiw@163.com
+github_username:  umiyo
 
-# Google-analytics
-google-analytics:
-  id: ""
+# Markdown设置
+kramdown:
+  input:  GFM
+  use_coderay: true
+  coderay:
+    coderay_line_numbers:  nil
+
+# 分页设置
+paginate: 10
+paginate_path: "page/:num"
 
 exclude: ['package.json', 'src' , 'node_modules']
