@@ -1,3 +1,10 @@
+---
+layout: post
+title: "webpack中部分plugin用法"
+subtitle: "测试"
+date: 2016-06-22
+author: umiyo
+---
 ### webpack中部分plugin用法
 ---
 - html-webpack-plugin
@@ -43,7 +50,7 @@ module.exports = {
         3. minify选项：
             - false   默认值，不对生成的html文件进行压缩
             - {html-minifier}    https://github.com/kangax/html-minifier#options-quick-reference
-        
+
         4. chunksSortMode选项：
             - dependency    按照依赖关系排序
             - auto          默认值，按插件内置的排序方式
