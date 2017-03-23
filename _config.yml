@@ -7,7 +7,7 @@ paginate: 10
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
-favicon: logo.png
+favicon: ./logo.png
 
 # User settings
 username: umiyo
