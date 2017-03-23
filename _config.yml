@@ -1,7 +1,6 @@
 # 站点设置
 title: 守心向暖 - 以最烟火的平淡守心向暖
-description: 恒心是成功最好的帮手，不要妄自菲薄，也不要觉得每天一点点的进步微不足道。
-highlighter: rouge
+description: "恒心是成功最好的帮手，不要妄自菲薄，也不要觉得每天一点点的进步微不足道。"
 permalink: pretty
 paginate: 10
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
@@ -16,17 +15,26 @@ user_title: 前端开发工程师
 email: znyaiw@163.com
 github_username: umiyo
 
+# highlight: true
+safe: true
+
 # Markdown设置
 markdown: kramdown
 kramdown:
   input:  GFM
-  use_coderay: true
-  coderay:
-    coderay_line_numbers:  nil
+  toc_levels: 1..6
+  # syntax_highlighter: pygments
+  # syntax_highlighter_opts:
+  #  coderay_wrap: wrap
+  #  coderay_line_numbers: inline
+  #  coderay_line_numbers_start: 1
+  #  coderay_tab_width: 4
+  #  coderay_bold_every: 10
+  #  coderay_css: style
 
 # 分页设置
 gems: [jekyll-paginate]
 paginate: 10
 paginate_path: "page/:num"
 
-exclude: ['package.json', 'src' , 'node_modules']
+exclude: ['package.json', 'src' , 'node_modules', 'Gemfile', 'Gemfile.lock']

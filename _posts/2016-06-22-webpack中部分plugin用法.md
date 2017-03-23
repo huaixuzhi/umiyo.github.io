@@ -13,7 +13,7 @@ author: umiyo
 
 用法(webpack.config.js)：
 
-```
+{% highlight javascript linenos %}
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -36,7 +36,7 @@ module.exports = {
         })
     ]
 }
-```
+{% endhighlight %}
 
     - 需要注意的点
         1. 当同时设置title和template时，webpack会选择template中的title，即使其未设置。

@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
@@ -10,5 +10,5 @@
   <link rel="stylesheet" href="//at.alicdn.com/t/font_3uw4q6a75uahsemi.css">
   <link rel="stylesheet" href="//cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
-  <link rel="stylesheet" href="{{ "/assets/css/synatx.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/assets/css/syntax.css" | prepend: site.baseurl }}">
 </head>
