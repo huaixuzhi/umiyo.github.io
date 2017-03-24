@@ -5,19 +5,9 @@ permalink: pretty
 paginate: 10
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
-
 favicon: ./logo.png
-
-# User settings
-username: umiyo
-user_description: 竹杖芒鞋轻胜马，一蓑烟雨任平生。
-user_title: 前端开发工程师
-email: znyaiw@163.com
-github_username: umiyo
-
 # highlight: true
 safe: true
-
 # Markdown设置
 markdown: kramdown
 kramdown:
@@ -38,3 +28,40 @@ paginate: 10
 paginate_path: "page/:num"
 
 exclude: ['package.json', 'src' , 'node_modules', 'Gemfile', 'Gemfile.lock']
+
+# 用户设置
+username: umiyo
+user_description: 竹杖芒鞋轻胜马，一蓑烟雨任平生。
+user_title: 前端开发工程师
+email: znyaiw@163.com
+github_username: umiyo
+
+# itsme
+itsme: [
+  {
+    name: '守心向暖',
+    con: [{tag: 'p',class: 'code',text: '没有高挑的身材和漂亮的脸蛋，但这并不能妨碍我成为一个可爱的孩子。'},
+          {tag: 'img',class: 'code', url: 'assets/images/lh.png'},
+          {tag: 'p',class: 'code',text: '我的志向从小就很远大，当周围小伙伴还在幻想着多年后成为科学家、医生、教师或国家公职人员的时候，我已经在考虑哪座山头适合隐居了。然后这个“不切实际的想法”终于在高中的一次作文考试(作文题目:十年之后的我)中被老师拿出来做了典型，也是我多年学生生涯唯一一次那么光荣。'},
+          {tag: 'img',class: 'code',url: 'assets/images/ll.jpg'},
+          {tag: 'p',class: 'code',text: '而十年后现在的我，没有与草木为邻、鸟兽为伴，或许你就可以猜想到当年发生了什么？'},
+          {tag: 'p',class: 'code',text: '2010年在家人的期望下读了一所本省的大学，不过现在想来这就是缘分哪！点这里，可以让你欣赏下我美丽的大学——山东科技大学(青岛校区)，一个盛产蒲公英和水果的地方。'},
+          {tag: 'img',class: 'code',url: 'assets/images/dese.gif'},
+          {tag: 'p',class: 'code',text: '2013年暑假独自一人跑去北京，从此开始了一段不算长也不算短的实习生活，在忍受了(可能我鼻子比较娇弱，入冬后每天早晨都会流鼻血)北京干燥的冬天后，2014年4月初逃离了北京，然后回到我可爱的大学准备毕业事宜。'},
+          {tag: 'p',class: 'code',text: '同年7月初顺利毕业后，带上还有余温的大学物品回了趟家，就又奔赴了南方的鹏城——深圳。然后开始了我第一份正式工作，次年6月份辞掉工作后，到了美丽的大上海。实现了自己毕业三年，稳定余生的想法，从此开始我后5年的规划。'},
+          {tag: 'p',class: 'code',text: '这里要稳重[严肃而稳重地正襟危坐]：后5年规划的前两年还是注重技术的提升，落实到行动上就是夯实基础、窥新探新、务实与积累；再3年把工作的侧重点慢慢转移到实现自我价值，做一个合格的项目管理者(组自己的团队)、技术管理者(用自己的技术)和产品管理者(做自己的产品)。'},
+          {tag: 'img',class: 'code',url: 'assets/images/lovew.png'}]
+  },
+  {
+    name: '晒网的时候',
+    con: [{tag: 'p',class: 'code',text: '打开音乐播放器，能宅一天'},
+          {tag: 'p',class: 'code',text: '最喜欢周末做一大桌子菜，再邀上三五好友'},
+          {tag: 'p',class: 'code',text: '看野史……'},
+          {tag: 'p',class: 'code',text: '也爱运动，乒乓球、羽毛球和骑行，不过技术都不咋的'},
+          {tag: 'img',class: 'code',url: 'assets/images/bb.png'}]
+  }
+]
+
+# aboutme
+aboutme: [
+]

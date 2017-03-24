@@ -244,5 +244,8 @@ header {
 }
 /* iconfont */
 .iconfont {
-    font-size: 32px;
+    font-size: 20px;
+    @media only screen and (min-width:$cut){
+        font-size: 32px;
+    }
 }

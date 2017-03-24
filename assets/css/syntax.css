@@ -64,3 +64,26 @@
 /** rouge css style **/
 .highlighter-rouge {overflow-x: auto;}
 .highlighter-rouge .highlight {background-color: inherit; color: inherit; margin-top: 16px;}
+/** isme **/
+.itsme {
+    width: 75%;
+    float: left;
+}
+.aboutme {
+    width: 25%;
+    float: left;
+}
+.itsme h3,
+.aboutme h3 {
+    padding: 0;
+    margin: 0;
+    line-height: 2;
+}
+.itsme em,
+.aboutme em {
+    width: 80px;
+    height: 2px;
+    background-color: #ff00fa;
+    display: block;
+    margin-bottom: 15px;
+}
