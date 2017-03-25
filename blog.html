@@ -2,24 +2,26 @@
 layout: page
 title: 个人博客
 ---
-
-{% for post in site.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">
-            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h5 class="post-subtitle">
-            {{ post.subtitle }}
-        </h5>
-        {% endif %}
-        <div class="post-content-preview">
-            {{ post.content | strip_html | truncate:200 }}
-        </div>
-    </a>
-    <p class="post-meta">
-        {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} 发布于 {{ post.date | date: "%B %-d, %Y" }}
-    </p>
+<div class="itsme">
+    {% for post in site.posts %}
+    <div class="post-preview">
+        <a href="{{ post.url | prepend: site.baseurl }}">
+            <h2 class="post-title">
+                {{ post.title }}
+            </h2>
+            {% if post.subtitle %}
+            <h5 class="post-subtitle">
+                {{ post.subtitle }}
+            </h5>
+            {% endif %}
+            <div class="post-content-preview">
+                {{ post.description | strip_html | truncate:200 }}
+            </div>
+        </a>
+        <p class="post-meta">
+            {% if post.author %}{{ post.author }}{% else %}{{ site.title }}{% endif %} 发布于 {{ post.date | date: "%B %-d, %Y" }}
+        </p>
+    </div>
+    {% endfor %}
 </div>
-{% endfor %}
+{% include classify.html %}

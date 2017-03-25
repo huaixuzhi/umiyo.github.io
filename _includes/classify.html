@@ -1,0 +1,18 @@
+<div class="aboutme">
+    <div class=" sidebar">
+        <h3>类目归档</h3>
+        <em></em>
+        <ul>
+            {% for category in site.categories %}
+            <li><a href="/categories?category={{ category | first }}">{{ category | first }} <b>({{ category | last | size }})</b></a></li>
+            {% endfor %}
+        </ul>
+        <h3>标签云</h3>
+        <em></em>
+        <ul>
+            {% for tag in site.tags %}
+            <li><a href="/tags?tag={{ tag | first | url_encode }}">{{ tag | first }} <b>({{ tag | last | size }})</b></a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>

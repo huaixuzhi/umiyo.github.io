@@ -1,0 +1,38 @@
+---
+layout: page
+---
+<div class="itsme" id="tag"></div>
+{% include classify.html %}
+<script src="{{ "/assets/js/common.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+    // 将分类组合成JSON对象
+    var dataJson = {
+        {% for tag in site.tags %}
+            "{{ tag | first | url_decode}}": [
+            {% for post in tag.last %}
+                {"title": "{{ post.title }}",
+                 "subtitle": "{{ post.subtitle }}",
+                 "author": "{{ post.author }}",
+                 "tags": "{{ post.tags }}",
+                 "description": "{{ post.description | strip_html | truncate:200 }}",
+                 "url": "{{ post.url }}",
+                 "date": "{{ post.date | date: "%B %-d, %Y" }}"
+                },
+            {% endfor %}
+            ],
+        {% endfor %}
+    };
+    // 从URL上获取category参数
+    var curCat = getParam('tag');
+    console.log(curCat, dataJson);
+    // 拼接字符串
+    var catStr = '';
+    for(var i = 0; i < dataJson[curCat].length; i++) {
+        catStr += '<div class="post-preview"><a href="' + dataJson[curCat][i].url + '"><h2 class="post-title">' + dataJson[curCat][i].title + '</h2>'
+               + (dataJson[curCat][i].subtitle ? '<h5 class="post-subtitle">' + dataJson[curCat][i].subtitle + '</h5>' : '')
+               + '<div class="post-content-preview">' + dataJson[curCat][i].description + '</div></a><p class="post-meta">'
+               + dataJson[curCat][i].author + ' 发布于 ' + dataJson[curCat][i].date + '</p></div>';
+    }
+    // 填充节点
+    document.getElementById('tag').innerHTML = catStr;
+</script>

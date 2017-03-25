@@ -1,7 +1,10 @@
 ---
 layout: post
 title: "webpack中部分plugin用法"
-subtitle: "测试"
+subtitle: "webpack实用插件属性使用说明"
+categories: webpack
+tags: [webpack, 插件]
+description: "webpack是当下比较热门的前端资源模块管理和打包工具，可以将松散的模块按照依赖和规则打包成符合生产环境部署的前端资源，也可以将按需加载的模块进行代码分割，实际需要时再异步加载。webpack提供了很多实用的插件，以便于处理各种需求，利用得到，将大大提高工作效率。"
 date: 2016-06-22
 author: umiyo
 ---

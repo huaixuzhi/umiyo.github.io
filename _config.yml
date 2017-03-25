@@ -2,8 +2,7 @@
 title: 守心向暖 - 以最烟火的平淡守心向暖
 description: "恒心是成功最好的帮手，不要妄自菲薄，也不要觉得每天一点点的进步微不足道。"
 permalink: pretty
-paginate_path: 'page:num'
-paginate: 10
+permalink: /:year/:month/:day/:title.html
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 favicon: ./logo.png
@@ -66,4 +65,24 @@ itsme: [
 
 # aboutme
 aboutme: [
+    {
+      name: '在哪里可以找到我',
+      con: [{tag: 'p',class: 'link',text: 'github: <a href="https://github.com/umiyo" target="_blank">https://github.com/umiyo</a>'},
+            {tag: 'p',class: 'link',text: '个人站点: <a href="http://umiyo.net" target="_blank">http://umiyo.net</a>'},
+            {tag: 'p',class: 'link',text: '个人博客: <a href="/">https://umiyo.github.io</a>'}]
+    },
+    {
+      name: '捕鱼的网',
+      con: [{tag: 'p',class: 'code',text: '基础前端技术: HTML/CSS/JavaScript'},
+            {tag: 'p',class: 'code',text: '进阶前端技术: HTML5/CSS3/ES6'},
+            {tag: 'p',class: 'code',text: '前端框架：vuejs1.0/React,Bootstrap和jQuery,...'},
+            {tag: 'p',class: 'code',text: '服务器脚本：PHP,使用过CodeIgniter/thinkPHP'},
+            {tag: 'p',class: 'code',text: '数据库：基本SQL语句,使用过MongoDB/MySQL'},
+            {tag: 'p',class: 'code',text: '工具类：webpack/gulp自动构建,APICloud'}]
+    },
+    {
+      name: '晒好的鱼干',
+      con: [{tag: 'p',class: 'code',text: '<a href="/">个人博客</a>'},
+            {tag: 'p',class: 'code',text: '<a href="/">个人站点</a>'}]
+    }
 ]

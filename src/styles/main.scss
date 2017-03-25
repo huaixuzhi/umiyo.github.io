@@ -62,42 +62,43 @@ h6 {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
         filter: alpha(opacity=40);
         opacity: .4;
-        top: 0;
+        top: 50px;
     }
     50% {
         -ms-filter: none;
         -webkit-filter: none;
         filter: none;
         opacity: 1;
-        top: -10px;
+        top: 40px;
     }
     to {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
         filter: alpha(opacity=40);
         opacity: .4;
-        top: 0;
+        top: 50px;
     }
 }
 
 @keyframes pulse {
     from {
-        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
-        filter: alpha(opacity=40);
-        opacity: .4;
-        top: 0
-    }
-    50% {
         -ms-filter: none;
         -webkit-filter: none;
         filter: none;
         opacity: 1;
-        top: -10px
+        top: 50px;
     }
-    to {
+    50% {
         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
         filter: alpha(opacity=40);
         opacity: .4;
-        top: 0
+        top: 40px;
+    }
+    to {
+        -ms-filter: none;
+        -webkit-filter: none;
+        filter: none;
+        opacity: 1;
+        top: 50px;
     }
 }
 /* 首页canvas */
@@ -181,17 +182,20 @@ header {
             }
         }
         nav {
-            float: left;
-            display: none;
+            position: absolute;
+            right: 0;
+            @media only screen and (min-width:$cut){
+                position: relative;
+                display: none;
+            }
             li.nav-item {
                 float: left;
                 padding: 0 8px;
                 position: relative;
                 margin-bottom: 0;
-                @media only screen and (min-width:$cut){
-                    a {
-                        font-size: 16px;
-                    }
+                a {
+                    font-size: 16px;
+                    color: #22f9d3;
                 }
             }
         }
@@ -263,22 +267,73 @@ header {
     @media only screen and (min-width:$cut){
         width: 75%;
         float: left;
-        padding: 10px;
+        padding-right: 10px;
     }
 }
 .aboutme {
-    @media only screen and (min-width:$cut){
-        width: 25%;
-        float: left;
+    width: 25%;
+    float: left;
+    .sidebar {
+        @media only screen and (max-width:$cut){
+            width: 10px;
+            position: absolute;
+            top: 55px;
+            right: 0;
+            bottom: 45px;
+            padding: 0 10px 0 5px;
+            color: #fff;
+            background-color: #1a222c;
+            overflow: hidden;
+            &:hover {
+                width: 160px;
+                animation: pulse 5s infinite;
+                -webkit-animation: pulse 5s infinite;
+                b {
+                    @media only screen and (max-width:$cut){
+                        display: block;
+                    }
+                }
+            }
+        }
+        a {
+            position: relative;
+            line-height: 2;
+            display: block;
+            border-bottom: 1px solid #ff00fa;
+            @media only screen and (max-width:$cut){
+                color: #fff;
+                white-space: nowrap;
+            }
+            b {
+                position: absolute;
+                top: 0;
+                right: 0;
+                @media only screen and (max-width:$cut){
+                    display: none;
+                }
+            }
+        }
+    }
+    .link {
+        font-size: 16px;
+        color: #e30917;
+        line-height: 1.8;
+    }
+    h3 {
+        margin-top: 15px;
+        white-space: nowrap;
+    }
+    ul {
+        margin-left: 15px;
     }
 }
 .itsme em,
 .aboutme em {
-    width: 80px;
+    width: 3em;
     height: 2px;
     background-color: #ff00fa;
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
 }
 .post-preview {
     margin-bottom: 10px;

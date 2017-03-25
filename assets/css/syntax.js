@@ -12,7 +12,7 @@ export default StyleSheet.create({
         "color": "#f2f0df"
     },
     "highlight > pre": {
-        "overflowX": "scroll"
+        "overflowX": "auto"
     },
     "highlight code": {
         "paddingLeft": 48
@@ -224,6 +224,7 @@ export default StyleSheet.create({
     "highlighter-rouge highlight": {
         "backgroundColor": "inherit",
         "color": "inherit",
-        "marginTop": 16
+        "marginTop": 16,
+        "textAlign": "justify"
     }
 });
