@@ -1,6 +1,7 @@
 # 站点设置
 title: 守心向暖 - 以最烟火的平淡守心向暖
 description: "恒心是成功最好的帮手，不要妄自菲薄，也不要觉得每天一点点的进步微不足道。"
+author: umiyo
 permalink: pretty
 permalink: /:year/:month/:day/:title.html
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
