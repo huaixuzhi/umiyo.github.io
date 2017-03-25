@@ -1,0 +1,17 @@
+/**
+ * css reset
+ * 清除浏览器默认样式
+ * Author: umiyo
+ **/
+
+/** 去除列表项目标记 **/
+ul {
+    list-style: none;
+}
+/** 消除 **/
+/** 消除一动点点击时的阴影 **/
+a, input {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}

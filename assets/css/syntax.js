@@ -225,49 +225,5 @@ export default StyleSheet.create({
         "backgroundColor": "inherit",
         "color": "inherit",
         "marginTop": 16
-    },
-    "itsme": {
-        "width": "75%",
-        "float": "left"
-    },
-    "aboutme": {
-        "width": "25%",
-        "float": "left"
-    },
-    "itsme h3": {
-        "paddingTop": 0,
-        "paddingRight": 0,
-        "paddingBottom": 0,
-        "paddingLeft": 0,
-        "marginTop": 0,
-        "marginRight": 0,
-        "marginBottom": 0,
-        "marginLeft": 0,
-        "lineHeight": 2
-    },
-    "aboutme h3": {
-        "paddingTop": 0,
-        "paddingRight": 0,
-        "paddingBottom": 0,
-        "paddingLeft": 0,
-        "marginTop": 0,
-        "marginRight": 0,
-        "marginBottom": 0,
-        "marginLeft": 0,
-        "lineHeight": 2
-    },
-    "itsme em": {
-        "width": 80,
-        "height": 2,
-        "backgroundColor": "#ff00fa",
-        "display": "block",
-        "marginBottom": 15
-    },
-    "aboutme em": {
-        "width": 80,
-        "height": 2,
-        "backgroundColor": "#ff00fa",
-        "display": "block",
-        "marginBottom": 15
     }
 });
