@@ -5,7 +5,12 @@
         {% include nav.html %}
         <div class="wrapper">
             {{ content }}
+            <div class="cm-article" data-key="{{ page.title }}"></div>
         </div>
         {% include footer.html %}
     </body>
+    <script src="//comment.moe/dest/static/js/build.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        萌评.运转();
+    </script>
 </html>
