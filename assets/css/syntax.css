@@ -64,3 +64,116 @@
 /** rouge css style **/
 .highlighter-rouge {overflow-x: auto;}
 .highlighter-rouge .highlight {background-color: inherit; color: inherit; margin-top: 16px; text-align: justify;}
+/** thumb-box **/
+.pic-thumb-box {
+    width: 100%;
+    overflow: hidden;
+}
+.pic-thumb-box .pic-thumb {
+    width: 25%;
+    padding: 10px;
+    float: left;
+}
+.pic-thumb-box .pic-thumb > a,
+.pic-thumb-box .pic-thumb > a img {
+    width: 100%;
+    height: 188.25px;
+    display: block;
+}
+.pic-thumb-box .pic-thumb > .pic-thumb-text {
+    width: 50%;
+    background: #fff;
+    padding: 10px 15px;
+    height: 175px;
+    vertical-align: top;
+    display: none;
+    position: absolute;
+}
+.pic-thumb-box .pic-thumb > .pic-thumb-text h1 {
+    font-size: 18px;
+    margin: 5px auto;
+}
+.pic-thumb-box .pic-thumb > .pic-thumb-text em {
+    height: 2px;
+    width: 60px;
+    background: #FA1F4E;
+    border-radius: 2px;
+    display: block;
+}
+.pic-thumb-box .pic-thumb > .pic-thumb-text p {
+    font-size: 14px;
+    margin-top: 10px;
+    line-height: 16px;
+}
+.pic-thumb-box .pic-thumb-on {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.3);
+    z-index: 999;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+}
+.pic-thumb-box .pic-thumb-on > a,
+.pic-thumb-box .pic-thumb-on > a img {
+    width: 500px;
+    max-width: 100%;
+}
+.pic-thumb-box .pic-thumb-on > .pic-thumb-text {
+    width: 500px;
+    max-width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    display: block;
+}
+.pic-thumb-box .pic-thumb-on {
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    bottom: 60px;
+    left: 10px;
+    padding: 20px;
+    background-color: rgba(51, 51, 51, 0.3);
+    z-index: 999;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+}
+.pic-thumb-box .pic-thumb-on > a,
+.pic-thumb-box .pic-thumb-on > a img {
+    width: 500px;
+    max-width: 100%;
+}
+.pic-thumb-box .pic-thumb-on > .pic-thumb-text {
+    width: 500px;
+    max-width: 100%;
+    background-color: #fff;
+    padding: 10px;
+    display: block;
+}
+.pic-thumb-box .pic-thumb-on > #close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 48px;
+}

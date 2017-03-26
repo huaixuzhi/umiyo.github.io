@@ -2,3 +2,37 @@
 layout: page
 title: 项目案例
 ---
+<ul class="pic-thumb-box" id="pic-thumb-box">
+    {% for item in site.projects %}
+    {{ site.baseurl }}
+    <li class="pic-thumb">
+        <a>
+            {% if item.image != '' %}
+            <img src="{{site.baseurl}}/{{ item.image }}" />
+            {% else %}
+            <img src="{{site.baseurl}}/assets/images/projects/default.png" />
+            {% endif %}
+        </a>
+        <div class="pic-thumb-text">
+            <h1>{{ item.name }}</h1>
+            <em></em>
+            <p class="code">开发周期：{{ item.developed }}</p>
+            <p class="code">技术栈：{{ item.skills }}</p>
+            <p class="code">项目地址：{{ item.address }}</p>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+<script type="text/javascript">
+    var lis = document.getElementById('pic-thumb-box').getElementsByTagName('li');
+    for(var i = 0; i < lis.length; i++) {
+        lis[i].getElementsByTagName('a')[0].onclick = function() {
+            this.parentNode.className = 'pic-thumb-on';
+            this.parentNode.innerHTML += '<i class="iconfont icon-closed" id="close"></i>';
+            document.getElementById('close').onclick = function() {
+                this.parentNode.className = 'pic-thumb';
+                this.parentNode.removeChild(this);
+            };
+        };
+    }
+</script>

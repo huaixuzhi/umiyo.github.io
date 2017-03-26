@@ -226,5 +226,104 @@ export default StyleSheet.create({
         "color": "inherit",
         "marginTop": 16,
         "textAlign": "justify"
+    },
+    "pic-thumb-box": {
+        "width": "100%",
+        "overflow": "hidden"
+    },
+    "pic-thumb-box pic-thumb": {
+        "width": "25%",
+        "paddingTop": 10,
+        "paddingRight": 10,
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "float": "left"
+    },
+    "pic-thumb-box pic-thumb > a": {
+        "width": "100%",
+        "height": 188.25,
+        "display": "block"
+    },
+    "pic-thumb-box pic-thumb > a img": {
+        "width": "100%",
+        "height": 188.25,
+        "display": "block"
+    },
+    "pic-thumb-box pic-thumb > pic-thumb-text": {
+        "width": "50%",
+        "background": "#fff",
+        "paddingTop": 10,
+        "paddingRight": 15,
+        "paddingBottom": 10,
+        "paddingLeft": 15,
+        "height": 175,
+        "verticalAlign": "top",
+        "display": "none",
+        "position": "absolute"
+    },
+    "pic-thumb-box pic-thumb > pic-thumb-text h1": {
+        "fontSize": 18,
+        "marginTop": 5,
+        "marginRight": "auto",
+        "marginBottom": 5,
+        "marginLeft": "auto"
+    },
+    "pic-thumb-box pic-thumb > pic-thumb-text em": {
+        "height": 2,
+        "width": 60,
+        "background": "#FA1F4E",
+        "borderRadius": 2,
+        "display": "block"
+    },
+    "pic-thumb-box pic-thumb > pic-thumb-text p": {
+        "fontSize": 14,
+        "marginTop": 10,
+        "lineHeight": 16
+    },
+    "pic-thumb-box pic-thumb-on": {
+        "position": "absolute",
+        "top": 60,
+        "right": 10,
+        "bottom": 60,
+        "left": 10,
+        "paddingTop": 20,
+        "paddingRight": 20,
+        "paddingBottom": 20,
+        "paddingLeft": 20,
+        "backgroundColor": "rgba(51, 51, 51, 0.3)",
+        "zIndex": 999,
+        "display": "flex",
+        "WebkitFlexDirection": "column",
+        "MsFlexDirection": "column",
+        "flexDirection": "column",
+        "WebkitAlignItems": "center",
+        "MsFlexAlign": "center",
+        "alignItems": "center",
+        "WebkitJustifyContent": "center",
+        "MsFlexPack": "center"
+    },
+    "pic-thumb-box pic-thumb-on > a": {
+        "width": 500,
+        "maxWidth": "100%"
+    },
+    "pic-thumb-box pic-thumb-on > a img": {
+        "width": 500,
+        "maxWidth": "100%"
+    },
+    "pic-thumb-box pic-thumb-on > pic-thumb-text": {
+        "width": 500,
+        "maxWidth": "100%",
+        "backgroundColor": "#fff",
+        "paddingTop": 10,
+        "paddingRight": 10,
+        "paddingBottom": 10,
+        "paddingLeft": 10,
+        "display": "block"
+    },
+    "pic-thumb-box pic-thumb-on > close": {
+        "position": "absolute",
+        "right": 20,
+        "top": 20,
+        "fontSize": 48
     }
 });
