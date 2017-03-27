@@ -25,14 +25,18 @@ title: 项目案例
 </ul>
 <script type="text/javascript">
     var lis = document.getElementById('pic-thumb-box').getElementsByTagName('li');
-    for(var i = 0; i < lis.length; i++) {
-        lis[i].getElementsByTagName('a')[0].onclick = function() {
-            this.parentNode.className = 'pic-thumb-on';
-            this.parentNode.innerHTML += '<i class="iconfont icon-closed" id="close"></i>';
-            document.getElementById('close').onclick = function() {
-                this.parentNode.className = 'pic-thumb';
-                this.parentNode.removeChild(this);
+    scaleImg();
+    function scaleImg() {
+        for(var i = 0; i < lis.length; i++) {
+            lis[i].getElementsByTagName('a')[0].onclick = function() {
+                this.parentNode.className = 'pic-thumb-on';
+                this.parentNode.innerHTML += '<i class="iconfont icon-closed" id="close"></i>';
+                document.getElementById('close').onclick = function() {
+                    this.parentNode.className = 'pic-thumb';
+                    this.parentNode.removeChild(this);
+                    scaleImg();
+                };
             };
-        };
+        }
     }
 </script>
